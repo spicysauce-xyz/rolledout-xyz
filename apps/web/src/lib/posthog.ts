@@ -16,6 +16,7 @@ export const useInitializePosthog = () => {
 
     posthog.init(config.posthog.key, {
       api_host: config.posthog.host,
+      ui_host: "https://us.posthog.com",
       defaults: "2025-05-24",
     });
   }, [isHydrated]);

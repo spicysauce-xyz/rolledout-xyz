@@ -54,6 +54,7 @@ const POSTHOG_HOST = import.meta.env.PUBLIC_POSTHOG_HOST;
   })(document, window.posthog || []);
   posthog.init(POSTHOG_KEY, {
     api_host: POSTHOG_HOST,
+    ui_host: "https://us.posthog.com",
     defaults: "2025-05-24",
     person_profiles: "always",
   });
